@@ -59,7 +59,6 @@ export class AppComponent implements OnInit {
       take(2)
     );
     const result = higherOrder.pipe(combineLatestAll());
-
     result.subscribe((x) => console.log(x));
   }
 }
